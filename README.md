@@ -1,7 +1,39 @@
 # Complexnet-rl-lab
 Reinforcement Learning Laboratory for Complex Networks
 
+هدف پروژه
 
+
+
+
+ساختار پوشه‌ها
+
+│── src/                # کدهای اصلی (algorithms, utils)
+
+│── notebooks/          # نوت‌بوک‌های مرحله‌ای و آزمایشی
+
+│── tests/              # تست‌های واحد (unit tests)
+
+│── data/               # داده‌ها (مثلاً Anaheim)
+
+│── results/            # خروجی‌ها (log, txt, plots)
+
+│── requirements.txt    # لیست پکیج‌ها
+
+│── README.md           # توضیحات پروژه
+
+│── .gitignore
+
+
+
+
+نحوه اجرا
+
+
+
+
+
+خروجی‌ها
 
 
 
