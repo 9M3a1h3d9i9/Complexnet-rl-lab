@@ -3,10 +3,11 @@
 import networkx as nx
 
 def build_nx_graph_15():
+    # G = nx.Graph()  # for undirected graph # >> fix the bug
+    G = nx.DiGraph()  # for directed graph
 
-
-    G = nx.Graph()
-    G.add_edges_from(range(15))
+    # G.add_edges_from(range(15))  # >> fix the bug
+    G.add_nodes_from(range(15)) 
 
     # Create a 15-node directed graph with realistic capacities.
     # گراف جهت دار با 15 گره و ظرفیت های واقعی ایجاد کنید.
@@ -36,6 +37,6 @@ if __name__ == "__main__":
     G = build_nx_graph_15()
 
     print("Graph created with", G.number_of_nodes(), "nodes and", G.number_of_edges(), "edges.")
-    # for i, (u, v, d) in enumerate(G.edges(data=True)):
-    #     if i >= 10: break
-    #     print(f"{u} → {v} | capacity = {d['capacity']}")
+    for i, (u, v, d) in enumerate(G.edges(data=True)):
+        if i >= 10: break
+        print(f"{u} → {v} | capacity = {d['capacity']}")
