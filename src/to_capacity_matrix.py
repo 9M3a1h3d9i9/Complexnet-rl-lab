@@ -1,4 +1,10 @@
 import numpy as np
+
+import sys, os
+# To run Directed File (without -m ) can change the import ...
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+### !  . . .>> But this way not recommended.
+
 from src.nx_graph_15 import build_nx_graph_15
 
 def nx_to_capacity_matrix(G):
