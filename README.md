@@ -1,116 +1,55 @@
-# Complexnet-rl-lab
-Reinforcement Learning Laboratory for Complex Networks
+# ComplexNet RL Lab
 
-هدف پروژه
+> A research laboratory for reinforcement learning, graph algorithms, and complex-network optimization.
 
+## Overview
 
+This repository is a step-by-step research workspace for studying decision-making on complex networks. It combines graph construction, flow algorithms, reinforcement learning experiments, testing, and reproducible documentation.
 
+## Research Themes
 
-ساختار پوشه‌ها
+- Complex network representation
+- Reinforcement learning on graphs
+- Maximum-flow / minimum-cut concepts
+- Graph optimization
+- Network resilience and bottleneck analysis
 
-│── src/                # کدهای اصلی (algorithms, utils)
+## Development Status
 
-│── notebooks/          # نوت‌بوک‌های مرحله‌ای و آزمایشی
+**Research laboratory / experimental codebase.**
 
-│── tests/              # تست‌های واحد (unit tests)
+Individual components may have different maturity levels. The repository is intentionally organized to make experiments and algorithmic development traceable.
 
-│── data/               # داده‌ها (مثلاً Anaheim)
+## Planned / Existing Structure
 
-│── results/            # خروجی‌ها (log, txt, plots)
-
-│── requirements.txt    # لیست پکیج‌ها
-
-│── README.md           # توضیحات پروژه
-
-│── .gitignore
-
-
-
-
-نحوه اجرا
-
-
-
-
-
-خروجی‌ها
-
-
-
-
-
-
-
-
-
-
-
+```text
 Complexnet-rl-lab/
-│── src/                # کدهای اصلی (algorithms, utils)
-│── notebooks/          # نوت‌بوک‌های مرحله‌ای و آزمایشی
-│── tests/              # تست‌های واحد (unit tests)
-│── data/               # داده‌ها (مثلاً Anaheim)
-│── results/            # خروجی‌ها (log, txt, plots)
-│── requirements.txt    # لیست پکیج‌ها
-│── README.md           # توضیحات پروژه
-│── .gitignore
+├── src/           # algorithms and utilities
+├── notebooks/     # step-by-step experiments
+├── tests/         # unit tests
+├── data/          # experiment data
+├── results/       # logs, plots, and outputs
+├── requirements.txt
+└── README.md
+```
 
+## Development Roadmap
 
+1. Build and validate network topologies.
+2. Implement graph-flow baselines.
+3. Study Gomory-Hu and related connectivity concepts.
+4. Introduce RL environments and policies.
+5. Compare heuristic, graph-algorithmic, and learned approaches.
+6. Add reproducible evaluation and CI.
 
-Branching Strategy:
+## Engineering Approach
 
-main → نسخه پایدار
+Development follows feature branches, small commits, unit testing, and documentation-first experiment tracking.
 
-feature/nx-graph → ساخت گراف ۱۵ نودی
+## Relationship to Network Intelligence
 
-feature/edmonds-karp → پیاده‌سازی الگوریتم max-flow
+The laboratory provides algorithmic foundations that support the broader research direction of intelligent network optimization and resilience.
 
-feature/gomory-hu → پیاده‌سازی درخت گوموری–هو
+## Author
 
-docs/notebook → نوت‌بوک مرحله‌ای و گزارش
-
-tests/unit → تست‌های واحد
-
-مثال:
-git checkout -b feature/nx-graph
-
-(برای همه شاخه انجام شده ✔)
-
-
-
-Stepwise Development:
-for example :::
-
-git add src/nx_graph_15.py
-git commit -m "feat(nx-graph): add 15-node directed graph with capacities"
-git push origin feature/nx-graph
-
- . . . 
-
-
-
- Testing and CI/CD :
-
- pytest tests/
-
- git add tests/
- git commit pm "test: add unit tests for Ek and Gh implementations"
-
-
-
-Phase 5 ) Merge & Tag :
-
-وقتی هر شاخه کامل شد:
-
-bash
-git checkout main
-git merge --no-ff feature/nx-graph -m "merge: add 15-node graph builder"
-git merge --no-ff feature/edmonds-karp -m "merge: add manual EK implementation"
-git merge --no-ff feature/gomory-hu -m "merge: add manual GH tree"
-git merge --no-ff docs/notebook -m "merge: add step-by-step notebook"
-git push
-git tag v0.1-gh-manual
-git push origin v0.1-gh-manual
-
-
-
+Mohammad Mahdi Shafighi — M.Sc. Artificial Intelligence
