@@ -1,55 +1,65 @@
 # ComplexNet RL Lab
 
-> A research laboratory for reinforcement learning, graph algorithms, and complex-network optimization.
+> Research laboratory for **reinforcement learning, graph algorithms, and complex-network optimization**.
 
 ## Overview
 
-This repository is a step-by-step research workspace for studying decision-making on complex networks. It combines graph construction, flow algorithms, reinforcement learning experiments, testing, and reproducible documentation.
+ComplexNet RL Lab is an experimental workspace for studying decision-making on structured networks. It connects classical graph algorithms with reinforcement learning so that learned policies can eventually be compared with deterministic optimization and heuristic baselines.
 
 ## Research Themes
 
-- Complex network representation
+- Complex-network representation
+- Graph algorithms and connectivity
+- Maximum Flow / Minimum Cut
+- Network bottleneck analysis
+- Network resilience
 - Reinforcement learning on graphs
-- Maximum-flow / minimum-cut concepts
-- Graph optimization
-- Network resilience and bottleneck analysis
+- Learned vs. algorithmic optimization
 
-## Development Status
-
-**Research laboratory / experimental codebase.**
-
-Individual components may have different maturity levels. The repository is intentionally organized to make experiments and algorithmic development traceable.
-
-## Planned / Existing Structure
+## Research Pipeline
 
 ```text
-Complexnet-rl-lab/
-├── src/           # algorithms and utilities
-├── notebooks/     # step-by-step experiments
-├── tests/         # unit tests
-├── data/          # experiment data
-├── results/       # logs, plots, and outputs
-├── requirements.txt
-└── README.md
+Network Topology
+      ↓
+Graph Representation
+      ↓
+Flow / Connectivity Baselines
+      ↓
+RL Environment
+      ↓
+Policy Learning
+      ↓
+Baseline Comparison
+      ↓
+Evaluation & Visualization
 ```
 
-## Development Roadmap
+## Current Status
 
-1. Build and validate network topologies.
-2. Implement graph-flow baselines.
-3. Study Gomory-Hu and related connectivity concepts.
-4. Introduce RL environments and policies.
-5. Compare heuristic, graph-algorithmic, and learned approaches.
-6. Add reproducible evaluation and CI.
+**Research laboratory / experimental codebase.** Components have different maturity levels. The repository is intentionally treated as a development laboratory rather than a finished software product.
+
+## Roadmap
+
+- [ ] Validate representative network topologies.
+- [ ] Implement and test graph-flow baselines.
+- [ ] Study Gomory-Hu and related connectivity methods.
+- [ ] Build reproducible RL environments.
+- [ ] Compare heuristic, graph-algorithmic, and learned approaches.
+- [ ] Add systematic experiment tracking and reporting.
+- [ ] Strengthen automated tests and CI.
 
 ## Engineering Approach
 
-Development follows feature branches, small commits, unit testing, and documentation-first experiment tracking.
+Development emphasizes small changes, modular code, unit testing, reproducible experiments, and documentation that clearly distinguishes implemented functionality from future research.
 
-## Relationship to Network Intelligence
+## Relation to My Research
 
-The laboratory provides algorithmic foundations that support the broader research direction of intelligent network optimization and resilience.
+This laboratory provides algorithmic foundations for my broader work in **network intelligence, bottleneck detection, optimization, and resilience**, including the NeuroBottleneck research direction.
+
+## Technology
+
+`Python` · `Graph Algorithms` · `Reinforcement Learning` · `Complex Networks` · `Optimization`
 
 ## Author
 
-Mohammad Mahdi Shafighi — M.Sc. Artificial Intelligence
+**Mohammad Mahdi Shafighi** — M.Sc. Artificial Intelligence
